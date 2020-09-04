@@ -1,0 +1,268 @@
+.sc-container {
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    > .sc-header {
+        width: 100%;
+        height: 80px;
+        background:#212121;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5%;
+        box-sizing: border-box;
+
+        > div {
+
+            &:nth-of-type(1) {
+                color: white;
+                font-size: 20px;
+            }
+
+            &:nth-of-type(2) {
+                width: 30%;
+                height: 45%;
+                color: white;
+                border: 1px solid white;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                cursor: pointer; 
+
+                > i {
+                    margin-right: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    > .sc-date {
+        width: 90%;
+        height: 80px;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        color: grey;
+        font-size: 20px;
+    }
+
+    > .sc-teams {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+
+        > .sc-team {
+
+            > div {
+                
+                
+                &:nth-of-type(1) {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 10px;
+                    
+                    > div {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: center;
+    
+                        > img {
+                            object-fit: cover;
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 10px;
+                            border: 5px solid #DFDCD7;
+                        }
+        
+                        > p {
+                            margin: 0;
+    
+                            &:nth-of-type(1) {
+                                font-size: 20px;
+                                font-weight: 600;
+                            }
+
+                            &:nth-of-type(2) {
+                                font-size: 15px;
+                                color: #767676;
+
+                            }
+                        }
+
+                    }
+                }
+
+                &:nth-of-type(2).sc-left-nickname {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-top: 20px;
+
+                }
+
+                &:nth-of-type(2).sc-right-nickname {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-top: 20px;
+                }
+
+            }
+        }
+    }
+
+    > .sc-footer {
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 30px;
+        
+        > p {
+            margin: 0;
+            font-weight: 600;
+
+            &:nth-of-type(1) {
+                font-size: 20px;
+                color: #161616;
+            }
+
+            &:nth-of-type(2) {
+                font-size: 20px;
+                color: #757575;
+            }
+        }
+    }
+
+    > .sc-team-members {
+        width: 90%;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+
+        > .sc-member {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            
+
+            > div {
+
+                > img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 2px solid #E2E3E3;
+                }
+               
+            }
+
+        }
+        .sc-member.sc-right-member {
+            justify-content: flex-end;
+            
+            > div {
+                &:nth-of-type(1) {
+                    margin-right: 20px;
+
+                    > p {
+                        margin: 0;
+                        text-align: center;
+
+                        &:nth-of-type(1) {
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                        &:nth-of-type(2) {
+                            font-size: 16px;
+                            color: #9B9B9B;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sc-member.sc-left-member {
+            > div {
+                
+                &:nth-of-type(2) {
+                    margin-left: 20px;
+
+                    > p {
+                        margin: 0;
+                        font-weight: 600;
+                        text-align: center;
+
+                        &:nth-of-type(1) {
+                            font-size: 16px;
+                        }
+                        &:nth-of-type(2) {
+                            font-size: 16px;
+                            color: #9B9B9B;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    > .sc-team-title {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        align-items: center;
+
+        > div {
+
+            &:nth-of-type(2) {
+                
+
+                > p {
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #919596;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    > img {
+                        width: 30px;
+                        height: 30px;
+                        object-fit: cover;
+                        margin-right: 15px;
+                    }
+
+                }
+               
+
+            }
+            &:nth-of-type(1), &:nth-of-type(3) {
+                width: 100%;
+                height: 4px;
+                background: #F4F4F4;
+            }
+
+        }
+    }
+}
+@media( min-width: 500px ) {
+    .sc-container {
+        box-shadow: 0 0 38px 7px rgba(0, 0, 0, 0.12);
+    }
+}
