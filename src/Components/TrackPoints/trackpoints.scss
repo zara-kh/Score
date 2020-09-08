@@ -1,0 +1,103 @@
+.tr-container {
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 100vh;
+    overflow: hidden;
+
+    > .tr-goback {
+        padding: 4%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        > a {
+            text-decoration: underline;
+
+            &:nth-of-type(1) {
+                font-size: 20px;
+                color: black;
+
+                &:hover {
+                    color: blue;
+                }
+            }
+
+            &:nth-of-type(2) {
+                font-size: 15px;
+                color: rgb(45, 45, 241);
+
+                &:hover {
+                    color: rgb(0, 0, 202);
+                }
+            }
+        }
+    }
+
+    > h1 {
+        text-align: center;
+    }
+
+    > .tr-p {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+
+        > p {
+            font-weight: 600;
+        }
+    }
+
+    > .tr-collapse {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        border: none;
+        background-color: transparent;
+        
+        > .tr-panel {
+            margin-bottom: 10px;
+            border: 2px solid #787878;
+            background-color: #D6D6D6;
+
+            > .ant-collapse-content{
+                background-color: #F2F2F2ed;
+            }
+        }
+
+        .viewStatus {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 20px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+
+            > span {
+                font-size: 12px;
+
+                &:nth-of-type(1) {
+                    color: #6915FD;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+
+                &:nth-of-type(2) {
+                    text-decoration: underline;
+                }
+            }
+        }
+       
+    }
+}
+
+
+@media( min-width: 500px ) {
+    .tr-container {
+        box-shadow: 0 0 38px 7px rgba(0, 0, 0, 0.12);
+    }
+}

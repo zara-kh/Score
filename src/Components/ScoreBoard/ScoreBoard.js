@@ -18,8 +18,8 @@ const ScoreBoard = () => {
                     <Team team='https://www.themontserratreporter.com/wp-content/uploads/2016/06/1024px-West_Indies_Cricket_Cap_Insignia.svg.png' dir='right' teamName='WI' />
                 </div> 
                 <ScorMessage />  
-                <TeamMembers flag='https://theflagcompany.in/wp-content/uploads/2018/10/india-flag-small.png' />
-                <TeamMembers flag='https://www.themontserratreporter.com/wp-content/uploads/2016/06/1024px-West_Indies_Cricket_Cap_Insignia.svg.png' />
+                <TeamMembers tm='1' flag='https://theflagcompany.in/wp-content/uploads/2018/10/india-flag-small.png' />
+                <TeamMembers tm='2' flag='https://www.themontserratreporter.com/wp-content/uploads/2016/06/1024px-West_Indies_Cricket_Cap_Insignia.svg.png' />
             </div>
         </div>
     )

@@ -1,0 +1,93 @@
+.ap-container {
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 100vh;
+    overflow: hidden;
+
+    > .ap-add-players-title {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    > .ap-select-team {
+        width: 70%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+
+        > span {
+            font-size: 25px;
+            color: #919596;
+            font-weight: 600;
+        }
+    }
+
+    > .ap-players-title {
+        font-size: 22px;
+        width: 70%;
+        margin: 0 auto 20px;
+    }
+
+    > .ap-player {
+        width: 70%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+
+        > .ap-player-info {
+            display: flex;
+            align-items: center;
+
+            > span {
+                font-size: 20px;
+            }
+    
+            > img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 15px;
+            }
+        }
+
+    }
+
+    > .ap-add-player-next {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        a {
+            text-decoration: none;
+            width: 25%;
+            height: 35px;
+
+            > button {
+                width: 100%;
+                height: 100%;
+                background: white;
+                border: 1px solid grey;
+                cursor: pointer;
+    
+    
+                &:hover {
+                    border: 1px solid #009EE5;
+                    color: #009EE5;
+                }
+    
+            }
+        }
+        
+    }
+}
+
+@media( min-width: 500px ) {
+    .ap-container {
+        box-shadow: 0 0 38px 7px rgba(0, 0, 0, 0.12);
+    }
+}   
