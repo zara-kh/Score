@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import { Link } from 'react-router-dom';
 // import HamburgerMenu from 'react-hamburger-menu';
 import './header.scss';
 
 
 
-export default function Header() {
+export default function Header({ title = 'India vs West Indies' }) {
 
-    const [isMenuOpen, toggleMenu] = useState(false)
+    // const [isMenuOpen, toggleMenu] = useState(false)
 
     // const menuhandleClick = () => {
     //     toggleMenu(!isMenuOpen)
@@ -15,8 +15,10 @@ export default function Header() {
 
     return (
         <div className='header'>
-            <p>India vs West Indies</p>
+            <p>{title}</p>
         </div>
+
+        
         // <div className='header'>
         //     <HamburgerMenu
         //       isOpen={isMenuOpen}

@@ -21,12 +21,13 @@ class Confirm extends Component {
     else {
         logo = logo2
     }
+
     return (
         <React.Fragment>
           <div className='ipl-c-container'>
-            <Header/>
-            <h1>ipl confirm</h1>
-            <div style={{ padding:"10px", fontSize: "16px"}}>
+            <Header title='IPL Confirm'/>
+
+            <div style={{marginTop:'30px', padding:"10px", fontSize: "16px"}}>
               <div>
                 <div className='ipl-c-imgdiv'>
                   <img src={logo} className='ipl-c-img' alt="" />

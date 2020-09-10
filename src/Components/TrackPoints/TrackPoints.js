@@ -1,10 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './trackpoints.scss';
 
 import Footer from '../Footer/Footer';
 import Header from '../Header/ScoreHeader';
-
 
 
 import { Collapse } from 'antd';
@@ -18,27 +16,6 @@ function ViewMoreLess({ status }) {
     )
 }
 
-// const track = [
-//     {
-//         name:'Favorites'
-//     },
-//     {
-//         name:'Predict:'
-//     },
-//     {
-//         name:'Spin'
-//     },
-//     {
-//         name:'Lucky draw'
-//     },
-//     {
-//         name:'Spend'
-//     },
-//     {
-//         name:'Refer'
-//     },
-// ]
-
 export default function TrackPoints() {
 
     const { Panel } = Collapse;
@@ -49,14 +26,7 @@ export default function TrackPoints() {
 
     return(
         <div  className='tr-container'>
-            <Header/>
-            <div className='tr-goback'>
-                <Link to='/add-player' className='tr-link1'> Go back </Link>
-                <Link to='/add-player' className='tr-link2'> How to redeem</Link>
-            </div>
-            <h1>
-                Track points
-            </h1>
+            <Header title='Track points' />
             <div className='tr-p'>
                 <p>Total earned : XX points</p>
             </div>

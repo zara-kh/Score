@@ -7,7 +7,6 @@ import Player from './Player';
 
 import Footer from '../Footer/Footer';
 import Header from '../Header/ScoreHeader';
-// import Header from '../ScoreBoard/ScoreHeader';
 
 
 export default function AddPlayer() {
@@ -160,8 +159,8 @@ export default function AddPlayer() {
         <div>
             <div className='ap-root'>
                 <div className='ap-container'>
-                    <Header/>
-                    <h1 className='ap-add-players-title'>Select Players</h1>
+                    <Header title='Select Players'/>
+                    
                     <div className='ap-select-team'>
                         <span>Team</span>
                         <Select
@@ -179,9 +178,11 @@ export default function AddPlayer() {
                         </Select>
                     </div>
                     <p className='ap-players-title'>Players</p>
-                    {
+                    
+                   <div className='ap-players-table'> {
                         players.map((player, key)=> <Player player={player} key={key} />)
-                    }
+                    }</div>
+
                     <div className='ap-add-player-next'>
                         <Link to='confirm-player'><button>Next</button></Link>
                     </div>

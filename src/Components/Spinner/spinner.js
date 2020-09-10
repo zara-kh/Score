@@ -35,12 +35,11 @@ function Spinner() {
   return (
     <>
     <div className='s-container'>
-      <Header/>
+      <Header title='Spinner'/>
       <div className='s-goback'>
          <Link to='add-player'> Go back </Link>
       </div>
 
-      <h1>Spinner</h1>
         <div id="spinner"  className='s-spinner'  ref={refSpinner} />
 
         <div id="action"  className='s-action'>

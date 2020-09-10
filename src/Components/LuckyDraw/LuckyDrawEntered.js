@@ -13,12 +13,12 @@ export default function LuckyDrawEntered() {
     return (
         
         <div  className='lde-container'>
-            <Header/>
+            <Header title='Lucky draw '/>
+            
             <div className='lde-goback'>
                  <Link to='/lucky-drawer-enter'> Go back </Link>
             </div>
 
-            <h1> Lucky draw </h1>
 
             <div className='lde-img'>
                  <img src='images/luckyDrawerImage2.png' alt='' />

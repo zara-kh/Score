@@ -11,12 +11,12 @@ import Header from '../Header/ScoreHeader';
 export default function LuckyDrawResultDeclared() {
     return (
         <div  className='ldrd-container'>
-            <Header/>
+            <Header title='Lucky draw'/>
+
             <div className='ldrd-goback'>
                 <Link to='/lucky-drawer-entered'> Go back </Link>
             </div>
 
-            <h1> Lucky draw </h1>
 
             <div className='ldrd-img'>
                  <img src='images/luckyDrawerImage1.jpg' alt='' />

@@ -11,12 +11,11 @@ import Header from '../Header/ScoreHeader';
 export default function LuckyDrawNotEntered() {
     return (       
         <div  className='ldne-container'>
-            <Header/>
+            <Header title='Lucky draw' />
             <div className='ldne-goback'>
                 <Link to='/add-player'> Go back </Link>
             </div>
 
-            <h1> Lucky draw </h1>
 
             <div className='ldne-img'>
                 <img src='images/luckyDrawerImage2.png' alt='' />

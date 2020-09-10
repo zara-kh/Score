@@ -24,10 +24,8 @@ function App() {
           <Route path='/lucky-drawer-entered' component={LuckyDrawerEntered} />  
           <Route path='/lucky-drawer-result' component={LuckyDrawResultDeclared} />  
           <Route path='/track-points' component={TrackPoints} />
-
           <Route path='/spinner' component={Spinner} /> 
           <Route path="/confirm/:handle" component={Confirm} />
-          {/* <Route path="/confirm" component={Confirm} /> */}
           <Route path="/question" component={Question} /> 
     </Router>
   );

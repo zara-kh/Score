@@ -14,9 +14,9 @@ class Question extends Component {
       
         <React.Fragment>
           <div className='ipl-q-container'>
-            <Header/>
-            <h1>ipl cuestion</h1>
-            <div style={{ padding:"10px", fontSize: "16px"}}>
+            <Header title='IPL Question'/>
+
+            <div style={{marginTop:'30px', padding:"10px", fontSize: "16px"}}>
               <div className="">
                 <div className='ipl-q-imgdiv' >
                   <img src={logo} className='ipl-q-img' alt="" />

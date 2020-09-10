@@ -23,8 +23,8 @@ export default function ConfirmPlayer() {
     return (
         <div className='cp-root'>
             <div className='cp-container'>
-                <Header/>
-                <h1 className='cp-confirm-players-title'>Your selection</h1>
+                <Header title='Your Selection'/>
+                
                 <p className='cp-team-name'>Team - <span>{ teamName }</span></p>
                 
                 {
