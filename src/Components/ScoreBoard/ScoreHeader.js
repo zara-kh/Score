@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default function ScoreHeader() {
     return (
         <div className='sc-header'>

@@ -5,6 +5,11 @@ import './addplayer.scss';
 import { Select } from 'antd';
 import Player from './Player';
 
+import Footer from '../Footer/Footer';
+import Header from '../Header/ScoreHeader';
+// import Header from '../ScoreBoard/ScoreHeader';
+
+
 export default function AddPlayer() {
 
     let initialplayers = [
@@ -91,7 +96,7 @@ export default function AddPlayer() {
     const [team, setTeam] = useState('');
 
 
-    function setPlayerStatus(initialplayers, storagePlayers) {
+    function setPlayerStatus(initialplayers, storagePlayers, isChecked) {
 
         for(let i = 0; i < initialplayers.length; i++){
 
@@ -99,7 +104,7 @@ export default function AddPlayer() {
 
                 if(initialplayers[i].id === storagePlayers[j].id) {
 
-                    initialplayers[i].isChecked = true;
+                    initialplayers[i].isChecked = isChecked;
 
                 }
             }
@@ -112,7 +117,7 @@ export default function AddPlayer() {
         
         let storagePlayers = JSON.parse(localStorage.getItem('players')) || []
 
-        initialplayers = setPlayerStatus(initialplayers, storagePlayers);
+        initialplayers = setPlayerStatus(initialplayers, storagePlayers, true);
         
         let team = localStorage.getItem('team') || '';
         setTeam(team);
@@ -139,21 +144,23 @@ export default function AddPlayer() {
     }
 
     const onChangeTeamName = (name) => {
-
+ 
         if(name !== localStorage.getItem('team')){
-            setPlayers(shuffle(initialplayers));
+            let storagePlayers = JSON.parse(localStorage.getItem('players')) || []
+            let restartPlayers = setPlayerStatus(players, storagePlayers, false);
+            setPlayers(shuffle(restartPlayers));
             localStorage.removeItem('players');
         }
 
         localStorage.setItem('team', name);
         setTeam(name);
-
     }
 
     return (
         <div>
             <div className='ap-root'>
                 <div className='ap-container'>
+                    <Header/>
                     <h1 className='ap-add-players-title'>Select Players</h1>
                     <div className='ap-select-team'>
                         <span>Team</span>
@@ -178,6 +185,8 @@ export default function AddPlayer() {
                     <div className='ap-add-player-next'>
                         <Link to='confirm-player'><button>Next</button></Link>
                     </div>
+                    
+                    <Footer/>
                 </div>
             </div>
         </div>

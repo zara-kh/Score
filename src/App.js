@@ -10,6 +10,9 @@ import TrackPoints from './Components/TrackPoints/TrackPoints';
 import LuckyDrawNotEntered from './Components/LuckyDraw/LuckyDrawNotEntered';
 import LuckyDrawerEntered from './Components/LuckyDraw/LuckyDrawEntered';
 import LuckyDrawResultDeclared from './Components/LuckyDraw/LuckyDrawResultDeclared';
+import Spinner from './Components/Spinner/spinner';
+import Question from './Components/IPL/iplQuestion';
+import Confirm from './Components/IPL/iplConfirm';
 
 function App() {
   return (
@@ -20,7 +23,12 @@ function App() {
           <Route path='/lucky-drawer-enter' component={LuckyDrawNotEntered} />  
           <Route path='/lucky-drawer-entered' component={LuckyDrawerEntered} />  
           <Route path='/lucky-drawer-result' component={LuckyDrawResultDeclared} />  
-          <Route path='/track-points' component={TrackPoints} />  
+          <Route path='/track-points' component={TrackPoints} />
+
+          <Route path='/spinner' component={Spinner} /> 
+          <Route path="/confirm/:handle" component={Confirm} />
+          {/* <Route path="/confirm" component={Confirm} /> */}
+          <Route path="/question" component={Question} /> 
     </Router>
   );
 }

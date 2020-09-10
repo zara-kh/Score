@@ -1,8 +1,11 @@
 .ap-container {
+    position: relative;
     max-width: 500px;
     margin: 0 auto;
     min-height: 100vh;
     overflow: hidden;
+    padding-bottom: 50px;
+    box-sizing: border-box;
 
     > .ap-add-players-title {
         text-align: center;
@@ -60,7 +63,7 @@
     > .ap-add-player-next {
         display: flex;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 20px;
 
         a {
             text-decoration: none;

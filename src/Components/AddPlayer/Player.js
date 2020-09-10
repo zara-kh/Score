@@ -2,13 +2,15 @@ import React, { useState, useEffect } from 'react';
 
 import { Checkbox } from 'antd';
 
+
+
 export default function Player({ player }) {
 
     const [playerIsChecked, togglePlayerChecked] = useState(false);
 
     useEffect(()=> {
         togglePlayerChecked(player.isChecked);
-    }, [player.isChecked]);
+    }, [player]);
 
     function onChangePlayesCheckbox(e) {
 

@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './confirmplayer.scss';
 
+import Footer from '../Footer/Footer';
+import Header from '../Header/ScoreHeader';
+
+
 
 export default function ConfirmPlayer() {
 
@@ -19,6 +23,7 @@ export default function ConfirmPlayer() {
     return (
         <div className='cp-root'>
             <div className='cp-container'>
+                <Header/>
                 <h1 className='cp-confirm-players-title'>Your selection</h1>
                 <p className='cp-team-name'>Team - <span>{ teamName }</span></p>
                 
@@ -36,6 +41,7 @@ export default function ConfirmPlayer() {
                     <Link to='#'><button>Confirm</button></Link>
                 </div>
 
+                <Footer/>
              </div>
         </div>
     )
