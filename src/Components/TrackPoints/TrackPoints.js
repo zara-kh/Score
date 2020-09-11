@@ -3,11 +3,13 @@ import './trackpoints.scss';
 
 import Footer from '../Footer/Footer';
 import Header from '../Header/ScoreHeader';
+import GoBack from '../GoBack/GoBack';
+import Close from '../Close/Close';
 
 
 import { Collapse } from 'antd';
 
-function ViewMoreLess({ status }) {
+function ViewMoreLess({ status,  }) {
     return (
         <div className='viewStatus'>
             <span>XX</span>
@@ -16,7 +18,7 @@ function ViewMoreLess({ status }) {
     )
 }
 
-export default function TrackPoints() {
+export default function TrackPoints(props) {
 
     const { Panel } = Collapse;
 
@@ -27,6 +29,11 @@ export default function TrackPoints() {
     return(
         <div  className='tr-container'>
             <Header title='Track points' />
+            <div className='goback-close'>
+                <GoBack goback={props}/>
+                <Close/>
+            </div>
+            
             <div className='tr-p'>
                 <p>Total earned : XX points</p>
             </div>

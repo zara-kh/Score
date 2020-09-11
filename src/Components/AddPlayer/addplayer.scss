@@ -6,6 +6,15 @@
     overflow: hidden;
     box-sizing: border-box;
 
+    > .goback-close{
+        width: 100%;
+        display: flex;
+        justify-content:  space-between;
+        padding: 4%;
+        height: 4vh;
+        align-items: center;
+    }
+
     > .ap-select-team {
         width: 70%;
         height: 10vh;
@@ -29,7 +38,7 @@
     }
 
     > .ap-players-table{
-        height: 59vh;
+        height: 55vh;
         overflow-y: auto;
         -ms-overflow-style: none; 
         scrollbar-width: none; 

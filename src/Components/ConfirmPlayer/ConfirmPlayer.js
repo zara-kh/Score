@@ -4,10 +4,11 @@ import './confirmplayer.scss';
 
 import Footer from '../Footer/Footer';
 import Header from '../Header/ScoreHeader';
+import GoBack from '../GoBack/GoBack';
+import Close from '../Close/Close';
 
 
-
-export default function ConfirmPlayer() {
+export default function ConfirmPlayer(props) {
 
     const [players, setPlayers] = useState([]);
     const [teamName, setTeamName] = useState('not selected');
@@ -24,7 +25,11 @@ export default function ConfirmPlayer() {
         <div className='cp-root'>
             <div className='cp-container'>
                 <Header title='Your Selection'/>
-                
+                <div className='goback-close'>
+                        <GoBack goback={props} />
+                        <Close/>
+                    </div>
+
                 <p className='cp-team-name'>Team - <span>{ teamName }</span></p>
                 
                 {

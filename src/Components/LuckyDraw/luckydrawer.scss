@@ -5,19 +5,12 @@
     min-height: 100vh;
     overflow: hidden;
 
-    > .lde-goback {
-        padding-top: 4%;
-        padding-left: 4%;
-        width: 100px;
-
-        > a {
-            font-size: 20px;
-            color: black;
-
-            &:hover {
-                color: blue;
-            }
-        }
+    > .goback-close{
+        width: 100%;
+        display: flex;
+        justify-content:  space-between;
+        padding: 4%;
+        align-items: center;
     }
 
     > h1 {
@@ -91,21 +84,13 @@
     min-height: 100vh;
     overflow: hidden;
 
-    > .ldne-goback {
-        padding-top: 4%;
-        padding-left: 4%;
-        width: 100px;
-
-        > a {
-            font-size: 20px;
-            color: black;
-
-            &:hover {
-                color: blue;
-            }
-        }
+    > .goback-close{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:  space-between;
+        padding: 4%;
     }
-
 
     > .ldne-img {
         width: 100%;
@@ -186,19 +171,12 @@
     min-height: 100vh;
     overflow: hidden;
 
-    > .ldrd-goback {
-        padding-top: 4%;
-        padding-left: 4%;
-        width: 100px;
-
-        > a {
-            font-size: 20px;
-            color: black;
-
-            &:hover {
-                color: blue;
-            }
-        }
+    > .goback-close{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:  space-between;
+        padding: 4%;
     }
 
     > h1 {

@@ -4,6 +4,15 @@
     margin: 0 auto;
     min-height: 100vh;
 
+    > .goback-close{
+        width: 100%;
+        display: flex;
+        justify-content:  space-between;
+        padding: 4%;
+        height: 4vh;
+        align-items: center;
+    }
+
     > .sc-header {
         width: 100%;
         height: 10vh;
@@ -43,7 +52,7 @@
 
     > .sc-date {
         width: 90%;
-        height: 10vh;
+        height: 8vh;
         display: flex;
         margin: 0 auto;
         align-items: center;
@@ -53,7 +62,7 @@
 
     > .sc-teams {
         width: 90%;
-        height: 15vh;
+        height: 13vh;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;

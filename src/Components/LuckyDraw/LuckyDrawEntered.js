@@ -5,20 +5,21 @@ import './luckydrawer.scss';
 
 import Footer from '../Footer/Footer';
 import Header from '../Header/ScoreHeader';
+import GoBack from '../GoBack/GoBack';
+import Close from '../Close/Close';
 
 
 
 
-export default function LuckyDrawEntered() {
+export default function LuckyDrawEntered(props) {
     return (
         
         <div  className='lde-container'>
             <Header title='Lucky draw '/>
-            
-            <div className='lde-goback'>
-                 <Link to='/lucky-drawer-enter'> Go back </Link>
+            <div className='goback-close'>
+                <GoBack goback={props}/>
+                <Close/>
             </div>
-
 
             <div className='lde-img'>
                  <img src='images/luckyDrawerImage2.png' alt='' />

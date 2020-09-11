@@ -7,16 +7,22 @@ import ScorMessage from './ScorMessage';
 import TeamMembers from './TeamMembers';
 
 import Footer from '../Footer/Footer'
+import GoBack from '../GoBack/GoBack';
+import Close from '../Close/Close';
 
 
-
-const ScoreBoard = () => {
+const ScoreBoard = (props) => {
 
     return (
         <div className='sc-root'>
             <div className='sc-container'>
                 
                 <ScoreHeader /> 
+                <div className='goback-close'>
+                    <GoBack goback={props} />
+                    <Close/>
+                </div>
+
                 <p className='sc-date'>15/12/19</p>
                       
                 <div className='sc-teams'>

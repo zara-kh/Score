@@ -1,20 +1,22 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import './luckydrawer.scss';
 
 import Footer from '../Footer/Footer';
 import Header from '../Header/ScoreHeader';
+import GoBack from '../GoBack/GoBack';
+import Close from '../Close/Close';
 
 
    
-export default function LuckyDrawResultDeclared() {
+export default function LuckyDrawResultDeclared(props) {
     return (
         <div  className='ldrd-container'>
             <Header title='Lucky draw'/>
-
-            <div className='ldrd-goback'>
-                <Link to='/lucky-drawer-entered'> Go back </Link>
+            <div className='goback-close'>
+                <GoBack goback={props}/>
+                <Close/>
             </div>
 
 

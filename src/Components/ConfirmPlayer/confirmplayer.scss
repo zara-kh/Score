@@ -4,6 +4,15 @@
     margin: 0 auto;
     min-height: 100vh;
     overflow: hidden;
+    
+    > .goback-close{
+        width: 100%;
+        display: flex;
+        justify-content:  space-between;
+        padding: 4%;
+        height: 4vh;
+        align-items: center;
+    }
 
     > .cp-team-name{
         margin-top: 30px;

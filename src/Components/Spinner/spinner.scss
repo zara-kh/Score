@@ -5,21 +5,12 @@
     min-height: 100vh;
     overflow: hidden;
 
-    .s-goback {
-        padding-top: 4%;
-        padding-left: 4%;
-        width: 100px;
-
-        > a {
-            text-decoration: underline;
-
-            font-size: 20px;
-            color: black;
-
-            &:hover {
-                color: blue;
-            }
-        }
+    > .goback-close{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:  space-between;
+        padding: 4%;
     }
 
     > .s-spinner{

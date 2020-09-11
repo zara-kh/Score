@@ -7,9 +7,10 @@ import Player from './Player';
 
 import Footer from '../Footer/Footer';
 import Header from '../Header/ScoreHeader';
+import GoBack from '../GoBack/GoBack';
+import Close from '../Close/Close';
 
-
-export default function AddPlayer() {
+export default function AddPlayer(props) {
 
     let initialplayers = [
         {
@@ -161,6 +162,11 @@ export default function AddPlayer() {
                 <div className='ap-container'>
                     <Header title='Select Players'/>
                     
+                    <div className='goback-close'>
+                        <GoBack goback={props} />
+                        <Close/>
+                    </div>
+
                     <div className='ap-select-team'>
                         <span>Team</span>
                         <Select

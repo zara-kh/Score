@@ -1,11 +1,13 @@
 import React, { useRef, useEffect } from 'react'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import mainSpinner from './mainSpinner'
 import './spinner.scss'
 import Footer from '../Footer/Footer';
 import Header from '../Header/ScoreHeader';
+import GoBack from '../GoBack/GoBack';
+import Close from '../Close/Close';
 
-function Spinner() {
+function Spinner(props) {
   //reference to Populate the Spinner in specified div 
   const refSpinner = useRef(null)
   //reference to Populate result in specified div 
@@ -31,15 +33,16 @@ function Spinner() {
   useEffect(() => {
     mainSpinner(refSpinner.current, refResult.current, refSpin.current, data.current)
   }, [])
-
+console.log(props)
   return (
     <>
     <div className='s-container'>
       <Header title='Spinner'/>
-      <div className='s-goback'>
-         <Link to='add-player'> Go back </Link>
-      </div>
 
+      <div className='goback-close'>
+            <GoBack goback={props}/>
+            <Close/>
+        </div>
         <div id="spinner"  className='s-spinner'  ref={refSpinner} />
 
         <div id="action"  className='s-action'>

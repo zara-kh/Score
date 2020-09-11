@@ -5,17 +5,27 @@ import './ipl.scss'
 
 import Footer from '../Footer/Footer';
 import Header from '../Header/ScoreHeader';
+import GoBack from '../GoBack/GoBack';
+import Close from '../Close/Close';
 
 
 
 class Question extends Component {
+    constructor(props){
+      super(props)
+    }
+
   render() {
     return (
       
         <React.Fragment>
           <div className='ipl-q-container'>
             <Header title='IPL Question'/>
-
+            <div className='goback-close'>
+                <GoBack goback={this.props}/>
+                <Close/>
+            </div>
+            
             <div style={{marginTop:'30px', padding:"10px", fontSize: "16px"}}>
               <div className="">
                 <div className='ipl-q-imgdiv' >
